@@ -1,23 +1,23 @@
 module.exports = {
-  siteTitle: "HeroBlog - a GatsbyJS starter", // <title>
-  shortSiteTitle: "HeroBlog - GatsbyJS starter", // <title> ending for posts and pages
-  siteDescription: "HeroBlog is a GatsbyJS starter.",
+  siteTitle: "DASSATEC", // <title>
+  shortSiteTitle: "DASSATEC", // <title> ending for posts and pages
+  siteDescription: "Especialistas en reparaciones electricas y de combustion.",
   siteUrl: "https://gatsby-starter-hero-blog.greglobinski.com",
   // pathPrefix: "",
   siteImage: "preview.jpg",
   siteLanguage: "en",
 
   /* author */
-  authorName: "greg lobinski",
-  authorTwitterAccount: "greglobinski",
+  authorName: "Dasaev",
+  authorTwitterAccount: "Dasaev",
 
   /* info */
-  headerTitle: "reparaciones electricas",
-  headerSubTitle: "slogan de la empresa",
+  headerTitle: "DASSATEC",
+  headerSubTitle: "Especialistas en reparaciones electricas y de combustion",
 
   /* manifest.json */
-  manifestName: "HeroBlog - a GatsbyJS starter",
-  manifestShortName: "HeroBlog", // max 12 characters
+  manifestName: "Especialistas en reparaciones electricas y de combustion",
+  manifestShortName: "DASSATEC", // max 12 characters
   manifestStartUrl: "/index.html",
   manifestBackgroundColor: "white",
   manifestThemeColor: "#666",
