@@ -54,101 +54,10 @@ const Contact = props => {
   }
 
   return (
-    <React.Fragment>
-      <ThemeContext.Consumer>
-        {theme => (
-          <div className="form">
-            <Form
-              name="contactenos"
-              onSubmit={handleSubmit}
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-            >
-              <FormItem label="Name">
-                {getFieldDecorator("name", {
-                  rules: [
-                    {
-                      whitespace: true
-                    }
-                  ]
-                })(<Input name="name" />)}
-              </FormItem>
-              <FormItem label="E-mail">
-                {getFieldDecorator("email", {
-                  rules: [
-                    {
-                      required: true,
-                      message: "Please input your e-mail address!",
-                      whitespace: true,
-                      type: "email"
-                    }
-                  ]
-                })(<Input name="email" />)}
-              </FormItem>
-              <FormItem label="Message">
-                {getFieldDecorator("message", {
-                  rules: [
-                    { required: true, message: "Please input your message!", whitespace: true }
-                  ]
-                })(
-                  <TextArea name="message" placeholder="" autosize={{ minRows: 4, maxRows: 10 }} />
-                )}
-              </FormItem>
-              <FormItem>
-                <Button type="primary" htmlType="submit">
-                  Submit
-                </Button>
-              </FormItem>
-            </Form>
-
-            {/* --- STYLES --- */}
-            <style jsx>{`
-              .form {
-                background: transparent;
-              }
-              .form :global(.ant-row.ant-form-item) {
-                margin: 0 0 1em;
-              }
-              .form :global(.ant-row.ant-form-item:last-child) {
-                margin-top: 1em;
-              }
-              .form :global(.ant-form-item-control) {
-                line-height: 1em;
-              }
-              .form :global(.ant-form-item-label) {
-                line-height: 1em;
-                margin-bottom: 0.5em;
-              }
-              .form :global(.ant-form-item) {
-                margin: 0;
-              }
-              .form :global(.ant-input) {
-                appearance: none;
-                height: auto;
-                font-size: 1.2em;
-                padding: 0.5em 0.6em;
-              }
-              .form :global(.ant-btn-primary) {
-                height: auto;
-                font-size: 1.2em;
-                padding: 0.5em 3em;
-                background: ${theme.color.brand.primary};
-                border: 1px solid ${theme.color.brand.primary};
-              }
-              .form :global(.ant-form-explain) {
-                margin-top: 0.2em;
-              }
-
-              @from-width desktop {
-                .form :global(input) {
-                  max-width: 50%;
-                }
-              }
-            `}</style>
-          </div>
-        )}
-      </ThemeContext.Consumer>
-    </React.Fragment>
+    <div>
+      <iframe src="https://services.cognitoforms.com/f/sKWaaW_XrkOdVl6uwD8lwg?id=1"  frameborder="0" scrolling="yes" seamless="seamless" height="880px" width="100%"></iframe>
+      <script src="https://services.cognitoforms.com/scripts/embed.js"></script>
+    </div>
   );
 };
 
