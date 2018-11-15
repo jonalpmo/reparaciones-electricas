@@ -56,25 +56,29 @@ const Contact = props => {
 
   return (
     <div className="contact-form__container">
-            <h2 className="contact-form__h3">Want To Get In Touch?</h2>
-            <div className="contact-form__subtitle">Lets Talk.</div>
             <form action="https://api.formbucket.com/f/buk_QRI7UVfOXHzWz4K9Xp6Bg4Fk" method="post">
-                    <label className="form__label">name<span className="form__required"> *</span></label>
-                    <input required className="form__left-input" type="text" name="firstname" placeholder="First" />
-                    <input required className="form__right-input" type="text" name="lastname" placeholder="Last" />
+                    <label className="form__label">nombre<span className="form__required"> *</span></label>
+                    <div className="form__details">
+                      <div className="form__detail">
+                        <input required className="form__left-input" type="text" name="firstname" placeholder="Nombre" />
+                      </div>
+                      <div className="form__detail">
+                        <input required className="form__right-input" type="text" name="lastname" placeholder="Apellido" />
+                      </div>
+                    </div>
                     <div className="form__details">
                         <div className="form__detail">
-                            <label className="form__label">email<span className="form__required"> *</span></label>
-                            <input required className="form__left-input" type="text" name="email" placeholder="Your Email Adress" />
+                            <label className="form__label">email</label>
+                            <input className="form__left-input" type="text" name="email" placeholder="Correo" />
                         </div>
                         <div className="form__detail">
-                            <label className="form__label">phone</label>
-                            <input className="form__right-input" type="text" name="phone" placeholder="Your Phone Number" />
+                            <label className="form__label">teléfono<span className="form__required"> *</span></label>
+                            <input required className="form__right-input" type="text" name="phone" placeholder="Número de tel." />
                         </div>
                     </div>
-                <label className="form__label">message</label>
-                <textarea className="form__comments" type="text" name="message" placeholder="Questions or Comments"></textarea>
-                <button className="contact-form__button button button--cta" type="submit">get in touch</button>
+                <label className="form__label">descripción del aparato y problema</label>
+                <textarea className="form__comments" type="text" name="message" placeholder="detalles del aparato"></textarea>
+                <button className="contact-form__button button button--cta" type="submit">Enviar consulta</button>
             </form>
         </div>
   );
