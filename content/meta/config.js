@@ -13,7 +13,7 @@ module.exports = {
 
   /* info */
   headerTitle: "DASSATEC",
-  headerSubTitle: "Especialistas en reparaciones electricas y de combustion",
+  headerSubTitle: "Especialistas en reparaciones eléctricas y de combustión",
 
   /* manifest.json */
   manifestName: "Especialistas en reparaciones electricas y de combustion",
