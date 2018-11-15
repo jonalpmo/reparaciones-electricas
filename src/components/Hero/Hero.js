@@ -10,7 +10,7 @@ const Hero = props => {
     <React.Fragment>
       <section className="hero">
         <h1>
-          NOMBRE DE LA EMPRESA <strong>SLOGAN</strong>
+          Especialistas en reparaciones electricas y de combustion <strong>DASSATEC</strong>
         </h1>
         <button onClick={scrollToContent} aria-label="scroll">
           <FaArrowDown />
