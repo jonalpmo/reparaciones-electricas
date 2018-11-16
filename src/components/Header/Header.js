@@ -7,6 +7,8 @@ import { ScreenWidthContext, FontLoadedContext } from "../../layouts";
 import config from "../../../content/meta/config";
 import Menu from "../Menu";
 
+import "./styles.scss"
+
 import avatar from "../../images/jpg/avatar.jpg";
 
 class Header extends React.Component {
@@ -35,7 +37,7 @@ class Header extends React.Component {
 
     return (
       <React.Fragment>
-        <header className={`header ${this.getHeaderSize()}`}>
+        <header className={`header ${this.getHeaderSize()} header__title-wrapper`}>
           <Link to="/" className="logoType">
             <div className="logo">
               <img src="https://media.istockphoto.com/vectors/zeus-vector-vector-id505473960" alt={config.siteTitle} />
@@ -78,6 +80,7 @@ class Header extends React.Component {
             top: 0;
             width: 100%;
             align-items: center;
+            color: #fff ;
 
             :global(a.logoType) {
               align-items: center;

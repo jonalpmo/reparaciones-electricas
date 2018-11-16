@@ -11,9 +11,11 @@ const Hero = props => {
   return (
     <React.Fragment>
       <section className="hero">
-        <h1 className="hero__title"><strong>Necesita ayuda con su equipo eléctrico o de combustion? </strong>
-        </h1>
-        <button onClick={scrollToContent} aria-label="scroll">
+        <div className="hero__title-wrapper">
+          <h1 className="hero__title"><strong>Necesita ayuda con su equipo eléctrico o de combustion? </strong>
+          </h1>
+        </div>
+        <button className="hero__button"  onClick={scrollToContent} aria-label="scroll">
           <FaArrowDown />
         </button>
       </section>
@@ -23,13 +25,13 @@ const Hero = props => {
         .hero {
           align-items: center;
           background: ${theme.hero.background};
-          background-image: url('https://solucionas.es/wp-content/uploads/2018/03/historia-de-la-electricidad-1288x724.jpg');
+          background-image: url('./images/bobina-inductiva-glosario-audifon.jpg');
           background-size: cover;
           color: ${theme.text.color.primary.inverse};
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
-          min-height: 90vh;
+          min-height: 100vh;
           padding: ${theme.space.inset.l};
           padding-top: ${theme.header.height.homepage};
         }
@@ -100,7 +102,7 @@ const Hero = props => {
 
         @from-width tablet {
           .hero {
-            background-image: url('https://solucionas.es/wp-content/uploads/2018/03/historia-de-la-electricidad-1288x724.jpg');
+            background-image: url('./images/hero-background.jpg');
           }
 
           h1 {
@@ -115,7 +117,7 @@ const Hero = props => {
 
         @from-width desktop {
           .hero {
-            background-image: url('https://solucionas.es/wp-content/uploads/2018/03/historia-de-la-electricidad-1288x724.jpg'));
+            background-image: url('./images/hero-background.jpg');
           }
 
           h1 {
