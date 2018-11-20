@@ -11,7 +11,7 @@ const Hero = props => {
     <React.Fragment>
       <section className="hero">
         <div className="hero__title-wrapper">
-          <h1 className="hero__title"><strong>Necesita ayuda con su equipo eléctrico o de combustion? </strong>
+          <h1 className="hero__title"><strong>Necesita ayuda con su equipo eléctrico o de combustión? </strong>
           </h1>
         </div>
         <button className="hero__button"  onClick={scrollToContent} aria-label="scroll">
