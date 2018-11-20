@@ -105,7 +105,7 @@ const Hero = props => {
           }
 
           h1 {
-            max-width: 90%;
+            max-width: 100%;
             font-size: 2.6rem;
           }
 
@@ -120,7 +120,7 @@ const Hero = props => {
           }
 
           h1 {
-            max-width: 80%;
+            max-width: 100%;
             font-size: 3.2rem;
           }
 
