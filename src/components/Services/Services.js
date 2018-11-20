@@ -11,8 +11,8 @@ const Services = props => {
   return (
     <React.Fragment>
       <div className="services__wrapper">
+        <h1 className="services__title">Le ofrecemos servicios de reparacion en:</h1>
         <div className="services">
-          <h1>Le ofrecemos servicios de reparacion en:</h1>
           <Link  to="/contact">
             <div className="services__item" >
               <img className="services__item-image" src="./images/taladro.jpg"></img>

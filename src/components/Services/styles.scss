@@ -10,7 +10,19 @@
   max-width: 365px;
   margin: auto;
 
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(2,1fr);
+    max-width: 760px;
+  }
 
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1200px;
+  }
+
+  &__title {
+    padding: 2rem;
+  }
 
   &__item {
     background-color: #f2f2f2;

@@ -50,7 +50,7 @@ color:
       g: '#969492'
       h: '#706e6b'
       i: '#514f4d'
-      j: &color-gray-10 '#3e3e3c'
+      j: &color-gray-10 '#fff'
       k: '#2b2826'
     black: '#000000'
   brand:
@@ -147,4 +147,3 @@ header:
     default: 80px
     fixed: 50px;
     homepage: 100px;
-
