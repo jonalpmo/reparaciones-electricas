@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import "./styles.scss"
 import { FaArrowDown } from "react-icons/fa/";
 
 const Hero = props => {
@@ -9,10 +10,11 @@ const Hero = props => {
   return (
     <React.Fragment>
       <section className="hero">
-        <h1>
-          Especialistas en reparaciones electricas y de combustion <strong>DASSATEC</strong>
-        </h1>
-        <button onClick={scrollToContent} aria-label="scroll">
+        <div className="hero__title-wrapper">
+          <h1 className="hero__title"><strong>Necesita ayuda con su equipo eléctrico o de combustion? </strong>
+          </h1>
+        </div>
+        <button className="hero__button"  onClick={scrollToContent} aria-label="scroll">
           <FaArrowDown />
         </button>
       </section>
@@ -22,21 +24,20 @@ const Hero = props => {
         .hero {
           align-items: center;
           background: ${theme.hero.background};
-          background-image: url('https://cdn.hipwallpaper.com/i/87/38/spjCTZ.jpg');
+          background-image: url('./images/bobina-inductiva-glosario-audifon.jpg');
           background-size: cover;
           color: ${theme.text.color.primary.inverse};
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
           min-height: 100vh;
-          height: 100px;
           padding: ${theme.space.inset.l};
           padding-top: ${theme.header.height.homepage};
         }
 
         h1 {
           text-align: center;
-          font-size: ${theme.hero.h1.size};
+          font-size: 2rem;
           margin: ${theme.space.stack.l};
           color: ${theme.hero.h1.color};
           line-height: ${theme.hero.h1.lineHeight};
@@ -100,12 +101,12 @@ const Hero = props => {
 
         @from-width tablet {
           .hero {
-            background-image: url('https://cdn.hipwallpaper.com/i/87/38/spjCTZ.jpg');
+            background-image: url('./images/hero-background.jpg');
           }
 
           h1 {
-            max-width: 90%;
-            font-size: ${`calc(${theme.hero.h1.size} * 1.3)`};
+            max-width: 100%;
+            font-size: 2.6rem;
           }
 
           button {
@@ -115,12 +116,12 @@ const Hero = props => {
 
         @from-width desktop {
           .hero {
-            background-image: url('https://cdn.hipwallpaper.com/i/87/38/spjCTZ.jpg'));
+            background-image: url('./images/hero-background.jpg');
           }
 
           h1 {
-            max-width: 80%;
-            font-size: ${`calc(${theme.hero.h1.size} * 1.5)`};
+            max-width: 100%;
+            font-size: 3.2rem;
           }
 
           button {
