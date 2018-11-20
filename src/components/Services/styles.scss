@@ -1,0 +1,46 @@
+.services__wrapper {
+  display: block;
+  margin: auto;
+}
+.services {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1,1fr);
+  padding: 1rem;
+  max-width: 365px;
+  margin: auto;
+
+
+
+  &__item {
+    background-color: #f2f2f2;
+    padding-bottom: .5rem;
+    line-height: 1.6;
+
+    &:hover &__item-image-svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__item-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    align-items: center;
+  }
+
+
+  &__name {
+    font-size: 1.2rem;
+  }
+
+  &__devices {
+    color: #6a6a6a;
+  }
+
+  &__item-image {
+    width: 100%;
+    max-height: 170px;
+  }
+}
