@@ -7,6 +7,8 @@ import Input from "antd/lib/input";
 import PropTypes from "prop-types";
 import React from "react";
 
+import "./styles.scss"
+
 const FormItem = Form.Item;
 const { TextArea } = Input;
 import "antd/lib/form/style/index.css";
@@ -55,7 +57,7 @@ const Contact = props => {
 
   return (
     <div>
-      <iframe src="https://services.cognitoforms.com/f/sKWaaW_XrkOdVl6uwD8lwg?id=1"  frameborder="0" scrolling="yes" seamless="seamless" height="880px" width="100%"></iframe>
+      <iframe className="form"src="https://services.cognitoforms.com/f/sKWaaW_XrkOdVl6uwD8lwg?id=1"  frameborder="0" scrolling="yes" seamless="seamless" width="100%"></iframe>
       <script src="https://services.cognitoforms.com/scripts/embed.js"></script>
     </div>
   );

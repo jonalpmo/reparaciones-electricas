@@ -23,7 +23,6 @@ class Menu extends React.Component {
     }));
 
     this.items = [
-      { to: "/category/", label: "Categories", icon: FaTag },
       ...pages,
       { to: "/contact/", label: "Contáctenos", icon: FaEnvelope }
     ];

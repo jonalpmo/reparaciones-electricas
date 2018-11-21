@@ -11,7 +11,7 @@ const Hero = props => {
     <React.Fragment>
       <section className="hero">
         <div className="hero__title-wrapper">
-          <h1 className="hero__title"><strong>Necesita ayuda con su equipo eléctrico o de combustion? </strong>
+          <h1 className="hero__title"><strong>Necesita ayuda con su equipo eléctrico o de combustión? </strong>
           </h1>
         </div>
         <button className="hero__button"  onClick={scrollToContent} aria-label="scroll">
@@ -24,7 +24,7 @@ const Hero = props => {
         .hero {
           align-items: center;
           background: ${theme.hero.background};
-          background-image: url('./images/bobina-inductiva-glosario-audifon.jpg');
+          background-image: url('https://png.pngtree.com/element_origin_min_pic/17/03/06/4e91e22264fed2e2ff709e2656af930a.jpg');
           background-size: cover;
           color: ${theme.text.color.primary.inverse};
           display: flex;
