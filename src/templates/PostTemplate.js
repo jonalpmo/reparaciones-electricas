@@ -33,6 +33,7 @@ const PostTemplate = props => {
               facebook={facebook}
               theme={theme}
             />
+          asdf
           </Article>
         )}
       </ThemeContext.Consumer>

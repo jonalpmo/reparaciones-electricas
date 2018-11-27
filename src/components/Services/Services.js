@@ -38,7 +38,7 @@ const Services = props => {
           </Link>
           <Link  to="/contact">
             <div className="services__item" >
-              <img className="services__item-image" src="./images/inversor.jpg"></img>
+              <img className="services__item-image" src="./inversor.jpg"></img>
               <div className="services__item-info-wrapper">
                 <div className="services__item-info" >
                   <div className="services__name">Inversores</div>
