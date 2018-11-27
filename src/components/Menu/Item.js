@@ -8,14 +8,14 @@ const Item = props => {
   return (
     <React.Fragment>
       <li className={"hiddenItem" in props ? "hiddenItem" : "item"} key={label}>
-        <Link
-          to={to}
+        <a
+          href={to}
           className={"hiddenItem" in props ? "inHiddenItem" : ""}
           onClick={onClick}
           data-slug={to}
         >
           {Icon && <Icon />} {label}
-        </Link>
+        </a>
       </li>
 
       {/* --- STYLES --- */}

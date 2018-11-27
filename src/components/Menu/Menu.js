@@ -25,7 +25,7 @@ class Menu extends React.Component {
     }));
 
     this.items = [
-      { to: "tel:+1-800-591-5407", label: "6223-6527", icon: FaWhatsapp},
+      { to: "tel:6223-6527", label: "6223-6527", icon: FaWhatsapp},
       { to: "/contact/", label: "Contáctenos", icon: FaEnvelope },
       ...pages
     ];
