@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Seo from "../components/Seo";
 import Article from "../components/Article";
+import Services from "../components/Services"
 import Page from "../components/Page";
 import { ThemeContext } from "../layouts";
 
@@ -22,10 +23,10 @@ const PageTemplate = props => {
         {theme => (
           <Article theme={theme}>
             <Page page={page} theme={theme} />
+            
           </Article>
         )}
       </ThemeContext.Consumer>
-
       <Seo data={page} facebook={facebook} />
     </React.Fragment>
   );
